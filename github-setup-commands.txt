@@ -1,0 +1,31 @@
+# GitHub Setup Commands for Your Portfolio
+
+# 1. First, create a new repository on GitHub.com:
+#    - Go to github.com
+#    - Click "New repository" 
+#    - Name it "portfolio" or "my-portfolio"
+#    - Make it PUBLIC (for GitHub Pages)
+#    - Don't initialize with README (you'll add your own)
+
+# 2. Open PowerShell in your portfolio folder and run these commands:
+
+# Initialize git repository
+git init
+
+# Add all files to staging
+git add .
+
+# Make your first commit
+git commit -m "Initial portfolio commit with chess timer, AI chatbot, and drawing pad"
+
+# Add your GitHub repository as remote (replace YOUR_USERNAME with your GitHub username)
+git remote add origin https://github.com/YOUR_USERNAME/portfolio.git
+
+# Push to GitHub
+git push -u origin main
+
+# If you get an error about 'master' vs 'main', run this first:
+git branch -M main
+
+# Then try the push command again
+git push -u origin main
