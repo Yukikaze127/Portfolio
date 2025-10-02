@@ -9,7 +9,7 @@ class ChatbotUI {
         this.aiStatus = document.getElementById('aiStatus');
         
         // Backend Configuration (Secure)
-        this.backendUrl = 'http://localhost:3001/api/chat'; // Your secure backend
+        this.backendUrl = 'https://portfolio-olive-three-u13be4dq5f.vercel.app/api/chat'; // Your live backend
         this.isApiConnected = true;
         this.isTyping = false;
         this.hideWelcomeMessage = false; // Add this flag
