@@ -208,11 +208,25 @@
         </div>
         
         <div class="search-container">
+            <!-- API Notice -->
+            <div class="alert alert-info mb-4" style="border-radius: 15px; background: rgba(255, 255, 255, 0.9); border: 2px solid #667eea;">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-info-circle-fill text-primary me-3" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h6 class="mb-1 text-dark">🚧 API Integration in Progress</h6>
+                        <p class="mb-0 text-dark">
+                            Unsplash API application is currently under review (6-10 business days). 
+                            The search functionality will be available once approved!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
             <div class="input-group">
                 <input type="text" id="searchInput" class="form-control search-input" 
                        placeholder="Search for images... (e.g., nature, city, cats)" 
-                       autocomplete="off">
-                <button class="btn search-btn" id="searchBtn">
+                       autocomplete="off" disabled>
+                <button class="btn search-btn" id="searchBtn" disabled>
                     <i class="bi bi-search"></i> Search
                 </button>
             </div>
@@ -225,8 +239,30 @@
             <!-- Welcome message -->
             <div class="text-center text-white" id="welcomeMessage">
                 <i class="bi bi-images" style="font-size: 3rem; margin-bottom: 20px;"></i>
-                <h3>Welcome to Image Search!</h3>
-                <p>Enter a search term above to discover amazing photos from Unsplash.</p>
+                <h3>Image Search Gallery</h3>
+                <p>This project showcases API integration with Unsplash's photo search service.</p>
+                
+                <div class="mt-4 p-4" style="background: rgba(255, 255, 255, 0.1); border-radius: 15px; max-width: 500px; margin: 0 auto;">
+                    <h5><i class="bi bi-clock"></i> Coming Soon!</h5>
+                    <p class="mb-2">Unsplash API application is under review.</p>
+                    <small class="text-light">Expected approval: 6-10 business days</small>
+                    
+                    <div class="mt-3">
+                        <h6>Features Ready:</h6>
+                        <div class="row text-start">
+                            <div class="col-6">
+                                <small>✅ Search Interface</small><br>
+                                <small>✅ Responsive Grid</small><br>
+                                <small>✅ Image Modals</small>
+                            </div>
+                            <div class="col-6">
+                                <small>✅ Download Function</small><br>
+                                <small>✅ Loading States</small><br>
+                                <small>✅ Error Handling</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
